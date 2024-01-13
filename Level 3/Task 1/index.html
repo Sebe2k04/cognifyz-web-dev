@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="back-slider">
+    <div class="content">
+        <center>
+            <h1>Seasons</h1>
+        </center>
+        <p>
+            Seasons refer to the four divisions of the year—spring, summer, autumn (fall), and winter—marked by specific weather patterns and daylight hours. These changes occur due to the Earth's axial tilt and its orbit around the sun. Each season has its own distinct characteristics and is associated with different temperatures, weather conditions, and lengths of daylight.
+            <ul>
+                <li>Summer</li>
+                <li>Winter</li>
+                <li>Autumn</li>
+                <li>Spring</li>
+            </ul>
+            </p>
+    </div>
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="assets/01.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="assets/02.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="assets/03.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="assets/04.jpg" alt="">
+            </div>  
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>  
+
+  <div class="row">
+    <div class="column">
+      <img src="assets/01.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="assets/02.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="assets/03.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="assets/04.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg">
+    <div id="imgtext"></div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body{
+    background: url(assets/login.jpg);
+    width: 100%;
+    background-size: 100% 200%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    color:black;
+}
+.calculator {
+    width: 350px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background:url(assets/bg1.jpg)
+}
+#waste{
+    background: transparent;
+}
+input{
+    width: 90%;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    padding: 10px;
+    font-size: 20px;
+    background:transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+}
+
+.button:hover {
+    background-color: rgb(240, 169, 3);
+}
+#AC
+{
+    background-color: rgb(213, 49, 49);
+    border: 2px solid;
+}
+#normal
+{
+    border: 2px solid;
+}

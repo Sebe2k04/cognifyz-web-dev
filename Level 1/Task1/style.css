@@ -1,0 +1,78 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    background-color:transparent;
+    overflow: hidden;
+}
+.nav a {
+    font-weight: bold;
+    float: left;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav a:hover {
+    color: orange;
+}
+.nav a.active {
+    color:rgb(17, 177, 240);
+}
+.nav-right {
+    float: right;
+}
+.content{
+    padding: 50px;
+    justify-content:right;
+    align-items: justify;
+}
+p{
+    font-size: 18px;
+    text-align: justify;
+}
+img {
+    padding: 20px;
+    width: 30%;
+    height: auto;
+}
+form{
+    width: 50%;
+}
+input{
+    width: 100%;
+    height: 50px;
+}
+button{
+    background-color: aqua;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    font-weight: bold;
+    color: red;
+}
+@keyframes textAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.;
+    }
+  }
+  .animated-text {
+    display: inline-block;
+    font-size: 36px;
+    color: red;
+    animation: textAnimation 4s infinite;
+    font-weight: bold;
+  }

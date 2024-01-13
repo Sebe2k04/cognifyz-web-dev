@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    color: black;
+}
+body{
+    padding:80px;
+}
+p{
+    text-align: justify;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 25px;
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 520;
+    margin-left: 35px;
+}
+.navbar a:hover,
+.navbar  a.active{
+    color: #00abf0;
+}
+.home{
+    display: flex;
+    align-items: center;
+}
+.home-content p{
+    font-size: 18px;
+    line-height: 1.8;
+}
+.home-content .button{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 50px;
+}
+.button a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 20px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px;
+}
+.button a:hover{
+    color: #00abf0;
+    background-color: white;
+}
+#main-pic{
+    width: 300px;
+    height: auto;
+}
+.benefits{
+    font-size: 18px;
+    line-height: 1.8;
+}
+.overview{
+    font-size: 18px;
+    line-height: 1.8;
+}
+.about
+{
+    display: block;
+    font-size: 20px;
+    align-items: center;
+    line-height: 1.6;
+    text-align: justify;
+}
+.contact a{
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+}
+i{
+    padding-right: 10px;
+    padding: 5px;
+}

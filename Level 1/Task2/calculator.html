@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc_style.css">
+</head>
+<body>
+    <center>
+    <h1>Simple CalCuLAtOR</h1>
+    </center>
+    <br>
+    <br>
+    <div class="calculator">
+        <br>
+        <br>
+        <center>
+        <input type="text" id="display" readonly>
+        </center>
+        <br>
+        <br>
+        <div class="buttons">
+            <button class="button" id="waste"></button>
+            <button class="button" id="waste"></button>
+            <button class="button" id="waste"></button>
+            <button class="button" onclick="clearDisplay()" id="AC">AC</button>
+            <button class="button" onclick="append('7')" id="normal">7</button>
+            <button class="button" onclick="append('8')" id="normal">8</button>
+            <button class="button" onclick="append('9')" id="normal">9</button>
+            <button class="button" onclick="append('+')" id="normal">+</button>
+            <button class="button" onclick="append('4')" id="normal">4</button>
+            <button class="button" onclick="append('5')" id="normal">5</button>
+            <button class="button" onclick="append('6')" id="normal">6</button>
+            <button class="button" onclick="append('-')" id="normal">-</button>
+            <button class="button" onclick="append('1')" id="normal">1</button>
+            <button class="button" onclick="append('2')" id="normal">2</button>
+            <button class="button" onclick="append('3')" id="normal">3</button>
+            <button class="button" onclick="append('*')" id="normal">*</button>
+            <button class="button" onclick="clearDisplay()" id="normal">C</button>
+            <button class="button" onclick="append('0')" id="normal">0</button>
+            <button class="button" onclick="append('/')" id="normal">/</button>
+            <button class="button" onclick="calculate()" id="normal">=</button>
+        </div>
+    </div>
+
+    <script>
+        function append(value) {
+            document.getElementById('display').value += value;
+        }
+
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+        }
+
+        function calculate() {
+            try {
+                document.getElementById('display').value = eval(document.getElementById('display').value);
+            } catch (error) {
+                document.getElementById('display').value = 'Error';
+            }
+        }
+    </script>
+</body>
+</html>
